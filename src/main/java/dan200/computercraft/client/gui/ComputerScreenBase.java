@@ -95,7 +95,7 @@ public abstract class ComputerScreenBase<T extends ContainerComputerBase> extend
 
 
     @Override
-    public final void render( @Nonnull MatrixStack stack, int mouseX, int mouseY, float partialTicks )
+    public void render( @Nonnull MatrixStack stack, int mouseX, int mouseY, float partialTicks )
     {
         renderBackground( stack );
         super.render( stack, mouseX, mouseY, partialTicks );

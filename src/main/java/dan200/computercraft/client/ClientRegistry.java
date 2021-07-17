@@ -18,6 +18,7 @@ import dan200.computercraft.shared.computer.inventory.ContainerViewComputer;
 import dan200.computercraft.shared.media.items.ItemDisk;
 import dan200.computercraft.shared.media.items.ItemTreasureDisk;
 import dan200.computercraft.shared.pocket.inventory.ContainerPocketComputer;
+import dan200.computercraft.shared.pocket.inventory.ContainerPocketController;
 import dan200.computercraft.shared.pocket.items.ItemPocketComputer;
 import dan200.computercraft.shared.util.Colour;
 import net.minecraft.client.gui.ScreenManager;
@@ -170,6 +171,7 @@ public final class ClientRegistry
 
         ScreenManager.<ContainerComputer, GuiComputer<ContainerComputer>>register( Registry.ModContainers.COMPUTER.get(), GuiComputer::create );
         ScreenManager.<ContainerPocketComputer, GuiComputer<ContainerPocketComputer>>register( Registry.ModContainers.POCKET_COMPUTER.get(), GuiComputer::createPocket );
+        ScreenManager.<ContainerPocketController, GuiController<ContainerPocketController>>register( Registry.ModContainers.POCKET_CONTROLLER.get(), GuiController::createPocketController );
         ScreenManager.register( Registry.ModContainers.TURTLE.get(), GuiTurtle::new );
 
         ScreenManager.register( Registry.ModContainers.PRINTER.get(), GuiPrinter::new );

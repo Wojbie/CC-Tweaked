@@ -54,6 +54,7 @@ import dan200.computercraft.shared.peripheral.printer.TilePrinter;
 import dan200.computercraft.shared.peripheral.speaker.BlockSpeaker;
 import dan200.computercraft.shared.peripheral.speaker.TileSpeaker;
 import dan200.computercraft.shared.pocket.inventory.ContainerPocketComputer;
+import dan200.computercraft.shared.pocket.inventory.ContainerPocketController;
 import dan200.computercraft.shared.pocket.items.ItemPocketComputer;
 import dan200.computercraft.shared.pocket.peripherals.PocketModem;
 import dan200.computercraft.shared.pocket.peripherals.PocketSpeaker;
@@ -317,6 +318,9 @@ public final class Registry
 
         public static final RegistryObject<ContainerType<ContainerPocketComputer>> POCKET_COMPUTER = CONTAINERS.register( "pocket_computer",
             () -> ContainerData.toType( ComputerContainerData::new, ContainerPocketComputer::new ) );
+
+        public static final RegistryObject<ContainerType<ContainerPocketController>> POCKET_CONTROLLER = CONTAINERS.register( "pocket_controller",
+            () -> ContainerData.toType( ComputerContainerData::new, ContainerPocketController::new ) );
 
         public static final RegistryObject<ContainerType<ContainerTurtle>> TURTLE = CONTAINERS.register( "turtle",
             () -> ContainerData.toType( ComputerContainerData::new, ContainerTurtle::new ) );
